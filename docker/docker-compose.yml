@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+        test1:
+                image: test:latest
+                environment:
+                  TEST_ENV_VAR: winter school container class
