@@ -17,7 +17,7 @@ func main() {
 	cmd.Stderr = os.Stderr
 
 	panicOnErr(syscall.Sethostname([]byte("host2")))
-	panicOnErr(syscall.Chroot("/home/senthil/lab/host1-go1.12.7"))
+	panicOnErr(syscall.Chroot("/home/senthil/lab/host2-go1.13.4"))
 	panicOnErr(syscall.Setenv("GOROOT", "/root/go"))
 	panicOnErr(syscall.Setenv("PATH", "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/root/go/bin"))
 	panicOnErr(os.Chdir("/"))
